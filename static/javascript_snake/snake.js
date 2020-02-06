@@ -124,6 +124,6 @@ function draw(){
     ctx.fillText("Score " + score, box, 2*box);
 };
 
-// draw function every 100 ms
+// draw function every 150 ms
 
-let game = setInterval(draw,200);
+let game = setInterval(draw,150);
