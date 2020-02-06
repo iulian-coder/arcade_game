@@ -5,7 +5,11 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def home_page():
     error = None
-    return render_template('snake.html', error=error)
+    return render_template('home.html', error=error)
+
+@app.route('/snake', methods=['GET'])
+def snake():
+    return render_template('snake.html')
 
 if __name__=='__main__':
     app.run(debug=True, host='0.0.0.0')
