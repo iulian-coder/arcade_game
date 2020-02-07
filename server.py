@@ -23,6 +23,9 @@ def cars():
 def mars_wars():
     return render_template('mars-wars.html')
 
+@app.route('/us')
+def us():
+    return render_template(('mars_wars_untold_stories.html'))
 
 if __name__=='__main__':
     app.run(debug=True, host='0.0.0.0')
