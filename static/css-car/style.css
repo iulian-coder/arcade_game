@@ -1,0 +1,104 @@
+body {
+    margin: auto;
+    width: 800px;
+
+}
+
+
+#container {
+    position: relative;
+    height: 600px;
+    width: 800px;
+
+    /* background-color: green; */
+    background-image: url('../assets-car/land_grass11.png');
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.btn-start {
+
+    position: relative;
+
+    /* width: 50%; */
+    top: 400px;
+    left: 38%;
+    /* left:700px; */
+    background-image: url('../assets-car/barrier_white.png');
+    background-repeat: no-repeat;
+    z-index: 200;
+    width: 200px;
+    height: 50px;
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 6px;
+    font-weight: bold;
+
+}
+
+
+.road {
+    position: absolute;
+    height: 65px;
+    width: 250px;
+    top: 0;
+    left: 280px;
+    text-align: center;
+    background-color: black;
+    /* background-image: url('../assets/road_asphalt22.png'); */
+
+}
+
+.road::before {
+    content: '|';
+    vertical-align: bottom;
+    color: white;
+    width: 2px;
+}
+
+
+.playerCar {
+    position: absolute;
+    height: 66px;
+    width: 35px;
+    bottom: 100px;
+    z-index: 400;
+    background-image: url('../assets-car/car_blue_1.png');
+    background-size: cover;
+    text-align: center;
+}
+
+.dashboard {
+    /* position: relative; */
+    text-align: center;
+    padding: 30px;
+    background-color: #bdc3c7;
+    font-size: 20px;
+
+}
+
+.enemy {
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-image: url('../assets-car/car_red_1.png');
+    background-size: cover;
+    text-align: center;
+    z-index: 99;
+}
+
+
+.end-game {
+    position: relative;
+    height: 550px;
+    width: 405px;
+    left: 500px;
+    text-align: center;
+    font-size: 150px;
+    z-index: 700;
+}
+
