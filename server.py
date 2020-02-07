@@ -14,10 +14,15 @@ def snake():
     return render_template('snake.html')
 
 
+
 @app.route('/cars')
 def cars():
     return render_template('car.html')
 
+@app.route('/mars-wars')
+def mars_wars():
+    return render_template('mars-wars.html')
 
-if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1')
+
+if __name__=='__main__':
+    app.run(debug=True, host='0.0.0.0')
