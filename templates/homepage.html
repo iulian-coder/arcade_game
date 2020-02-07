@@ -1,0 +1,69 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<div class="jumbotron jumbotron fluid">
+  <h1 class="display-4">About</h1>
+  <p class="lead">CodeCool Arcade.</p>
+  <hr class="my-4">
+  <p>This project was developed at Codecool Bucharest during the 4th TW of the Web Module</p>
+    <p>Inspired by the great arcade classics each team member developed a game. In the end we combined them into what we call the Codecool Arcade.</p>
+</div>
+
+
+<div class="jumbotron jumbotron fluid crd_shower">
+  <h1 class="display-4">Games</h1>
+  <p class="lead">What's on the Menu?</p>
+  <hr class="my-4">
+
+  <div class="card" style="width: 18rem;">
+<!--  <img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
+  <div class="card-body">
+    <h5 class="card-title">Car Game</h5>
+    <h6 class="card-subtitle mb-2 text-muted" style="color: cadetblue"><em>By Claudiu</em></h6>
+    <p class="card-text">A daring race on the highway that gets your blood pumping.</p>
+    <a href="{{url_for('cars')}}" class="btn btn-primary">Play</a>
+  </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+<!--  <img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
+  <div class="card-body">
+    <h5 class="card-title">Snake</h5>
+    <h6 class="card-subtitle mb-2 text-muted" style="color: cadetblue"><em>By Iulian</em></h6>
+    <p class="card-text">The classic game gets re imagined..</p>
+    <a href="{{ url_for('snake') }}" class="btn btn-primary">Play</a>
+  </div>
+</div>
+
+
+
+
+<div class="card" style="width: 18rem;">
+<!--  <img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
+  <div class="card-body">
+    <h5 class="card-title">Mars Wars</h5>
+    <h6 class="card-subtitle mb-2 text-muted" style="color: cadetblue"><em>By Dan</em></h6>
+    <p class="card-text">Humans have colonized Mars with the help of AI, however bug in the software causes them to go against their makers</p>
+    <a href="{{ url_for('mars_wars') }}" class="btn btn-primary">Play</a>
+  </div>
+</div>
+
+
+
+
+<div class="card" style="width: 18rem;">
+<!--  <img class="card-img-top" src=".../100px180/" alt="Card image cap">-->
+  <div class="card-body">
+    <h5 class="card-title">Mars Wars - Untold Stories</h5>
+    <h6 class="card-subtitle mb-2 text-muted" style="color: cadetblue"><em>By Stefan</em></h6>
+    <p class="card-text">The war between the humans and the AI causes the exterrestrial life on Mars to fight for their survival</p>
+    <a href="{{ url_for('us') }}" class="btn btn-primary">Play</a>
+  </div>
+</div>
+</div>
+{% endblock %}
+
+
+

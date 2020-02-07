@@ -1,0 +1,25 @@
+
+.jumbotron {
+    background-color: #037F8C;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar {
+    background-color: #D98723;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.crd_shower {
+    background-color: #D98723;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.card {
+    background-color: #158C03;
+    margin-left: 60px;
+    margin-right: 60px;
+    float: left;
+}

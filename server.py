@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def home_page():
     error = None
-    return render_template('home.html', error=error)
+    return render_template('homepage.html', error=error)
 
 
 @app.route('/snake', methods=['GET'])
